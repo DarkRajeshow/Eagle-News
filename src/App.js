@@ -35,7 +35,7 @@ function App() {
 
   const [alert, setAlert] = useState(null);
 
-  const apiKey = process.env.REACT_APP_API;
+  const apiKey = "24db96cd26f74c0d9b9c83a08151621b";
 
   let setPageSize = 5;
 
