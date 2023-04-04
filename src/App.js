@@ -33,7 +33,6 @@ function App() {
     }
   }
 
-  const [alert, setAlert] = useState(null);
 
   const apiKey = process.env.REACT_APP_API;
 
@@ -56,25 +55,25 @@ function App() {
         />
 
         <Routes>
-          <Route exact path="/" element={<News apiKey={apiKey} setProgress={setProgress} key="general" pageSize={setPageSize} category="general" country="in" />
+          <Route exact path="/Eagle-News/" element={<News apiKey={apiKey} setProgress={setProgress} key="general" pageSize={setPageSize} category="general" country="in" />
           }>
           </Route>
-          <Route exact path="/business" element={<News apiKey={apiKey} setProgress={setProgress} key="business" pageSize={setPageSize} category="business" country="in" />
+          <Route exact path="/Eagle-News/business" element={<News apiKey={apiKey} setProgress={setProgress} key="business" pageSize={setPageSize} category="business" country="in" />
           }>
           </Route>
-          <Route exact path="/entertainment" element={<News apiKey={apiKey} setProgress={setProgress} key="entertainment" pageSize={setPageSize} category="entertainment" country="in" />
+          <Route exact path="/Eagle-News/entertainment" element={<News apiKey={apiKey} setProgress={setProgress} key="entertainment" pageSize={setPageSize} category="entertainment" country="in" />
           }>
           </Route>
-          <Route exact path="/health" element={<News apiKey={apiKey} setProgress={setProgress} key="health" pageSize={setPageSize} category="health" country="in" />
+          <Route exact path="/Eagle-News/health" element={<News apiKey={apiKey} setProgress={setProgress} key="health" pageSize={setPageSize} category="health" country="in" />
           }>
           </Route>
-          <Route exact path="/science" element={<News apiKey={apiKey} setProgress={setProgress} key="science" pageSize={setPageSize} category="science" country="in" />
+          <Route exact path="/Eagle-News/science" element={<News apiKey={apiKey} setProgress={setProgress} key="science" pageSize={setPageSize} category="science" country="in" />
           }>
           </Route>
-          <Route exact path="/sports" element={<News apiKey={apiKey} setProgress={setProgress} key="sports" pageSize={setPageSize} category="sports" country="in" />
+          <Route exact path="/Eagle-News/sports" element={<News apiKey={apiKey} setProgress={setProgress} key="sports" pageSize={setPageSize} category="sports" country="in" />
           }>
           </Route>
-          <Route exact path="/technology" element={<News apiKey={apiKey} setProgress={setProgress} key="technology" pageSize={setPageSize} category="technology" country="in" />
+          <Route exact path="/Eagle-News/technology" element={<News apiKey={apiKey} setProgress={setProgress} key="technology" pageSize={setPageSize} category="technology" country="in" />
           }>
           </Route>
         </Routes>
