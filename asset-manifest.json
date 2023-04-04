@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Eagle-News/static/css/main.cafa6844.css",
+    "main.js": "/Eagle-News/static/js/main.4513274b.js",
+    "static/js/787.9a748b14.chunk.js": "/Eagle-News/static/js/787.9a748b14.chunk.js",
+    "index.html": "/Eagle-News/index.html",
+    "main.cafa6844.css.map": "/Eagle-News/static/css/main.cafa6844.css.map",
+    "main.4513274b.js.map": "/Eagle-News/static/js/main.4513274b.js.map",
+    "787.9a748b14.chunk.js.map": "/Eagle-News/static/js/787.9a748b14.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cafa6844.css",
+    "static/js/main.4513274b.js"
+  ]
+}
