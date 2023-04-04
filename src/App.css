@@ -1,38 +1,164 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 16px 30px;
+  margin: auto;
+  font-weight: 500;
+}
+
+* {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  font-family: 'montserrat';
+}
+
+.news-item {
+  cursor: pointer;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  z-index: 1;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.card-img-top:hover {
+  transition-duration: 350ms;
+  transform: scale(1.1);
+  margin-bottom: 5px;
+  margin-top: 5px;
+  z-index: -1;
+}
+
+.news-item:hover {
+  box-shadow: #004a42 15px 10px 0px 0;
+}
+
+.btn-dark {
+  background-color: #242646;
+}
+
+.btn-dark:hover {
+  background-color: #005a43 !important;
+}
+
+
+.one {
+  width: 0%;
+  height: 0%;
+  border: 10px solid rgb(170, 95, 95);
+  border-radius: 50%;
+  /* display:flex; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  animation: 2s ease-in-out infinite;
+  transform: translate(50%, 50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 2px white
+}
+
+.tog1 {
+  animation: 5s ease infinite;
+}
+
+#con {
+  position: fixed;
+  z-index: 100;
+  background-color: transparent;
+  transform: rotate(315deg);
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 5%;
+}
+
+#stop {
+  width: 10px;
+  padding: 10px;
+  /* position: relative; */
+  margin-top: 20%;
+}
+
+/* 
+@media (min-width: 768px) {
+  .container {
+    width: 100% !important;
+  }
+} */
+@media (max-width: 755px) {
+  .row {
+    margin: auto !important;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .container{
+    max-width: 100% !important;
+  }
+  .row {
+    margin: auto !important;
+  }
+}
+
+.category {
+  color: #008f99;
+  font-weight: 700;
+}
+
+.card-text-top {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.card-text-bottom {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.logoImg {
+  height: 40px;
+  border-radius: 15px;
+}
+
+.logoImg:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.sourceStyle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #3a5752;
   text-align: center;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.articleUrl {
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.row {
+  margin: 0 3%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#ToggleIcon{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#darkMode{
+  position: relative;
+  top: 0px;
+  right: 70px;
 }
